@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="russian language learning" />
+    <meta name="author" content="Chi-Ting Lu" />
+    <title>Хорошего дня: Get Daily Russian Vocab</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./home.js" defer></script>
+  </head>
+  <body>
+    <div class="homeHeader">
+      <div>Learn Russian</div>
+      <div class="homeBanner">
+        <div id="logo">好</div>
+        <div id="title">Хорошего дня</div>
+        <div id="subtitle">russian language learning</div>
+      </div>
+      <div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="quizPage.html">Quiz</a>
+          <a href="reviewPage.html">Review</a>
+          <a href="signinPage.html">Sign in</a>
+        </nav>
+      </div>
+    </div>
+    <div class="homeMain">
+      <div class="subscribeSection">
+        <div id="resultSubscribe"></div>
+        <h3>Subscribe to receive daily vocab word emails.</h3>
+        <form>
+          <select id="level" name="level" required>
+            <option value="" disabled selected hidden>Choose a level</option>
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+          </select>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <input id="subscribeBtn" type="submit" value="Subscribe" />
+        </form>
+      </div>
+      <div class="levelSection">
+        <h2>Which level are you?</h2>
+        <p>
+          Click on each level below to see sample words, or check out recent
+          daily words.
+        </p>
+        <div class="levelContainer">
+          <div class="btnContainer">
+            <button class="level_btn" autofocus>Level 1</button>
+            <button class="level_btn">Level 2</button>
+            <button class="level_btn">Level 3</button>
+            <button class="level_btn">Level 4</button>
+          </div>
+          <div class="cardContainer">
+            <div class="card">
+              <p>вы</p>
+              <p>you</p>
+              <p>pronoun</p>
+            </div>
+            <div class="card">
+              <p>знать</p>
+              <p>to know, be aware</p>
+              <p>verb</p>
+            </div>
+            <div class="card">
+              <p>сказать</p>
+              <p>to say, to speak</p>
+              <p>verb</p>
+            </div>
+            <div class="card">
+              <p>большой</p>
+              <p>big, large, important</p>
+              <p>adjective</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introSection">
+        <h2>Frequently Asked Questions</h2>
+        <p>What am I subscribing to?</p>
+        <p>
+          Select your Russian level and subscribe to receive daily emails with
+          vocabulary words at this level.
+        </p>
+        <br />
+        <p>What does Хорошего дня mean?</p>
+        <p>Have a wonderful day: Study hard and make progress every day.</p>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <span>Хорошего дня</span>
+        <i class="fa fa-github" style="font-size: 1.1rem"></i>
+      </div>
+    </footer>
+  </body>
+</html>

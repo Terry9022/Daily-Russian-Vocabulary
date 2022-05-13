@@ -1,0 +1,886 @@
+/* CSS Reset code */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My CSS rule */
+/* General rule */
+body {
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  color: #262626;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  display: block;
+  border: none;
+}
+
+nav {
+  text-align: center;
+  padding: 0.8rem;
+  color: #ff0000;
+}
+
+nav a {
+  padding: 0 0.8rem;
+  color: #cc0000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+br {
+  content: '';
+  display: block;
+  margin: 1.8rem;
+  font-size: 1rem;
+}
+
+/* Footer rule */
+footer {
+  background-image: linear-gradient(to right, #b30000, #e60000);
+  text-align: left;
+  padding: 0.6rem 4rem;
+  color: white;
+  margin-top: auto;
+  font-size: 1.1rem;
+}
+
+footer span {
+  margin-right: 0.5rem;
+}
+
+/* CSS for Home Page */
+/* Header rule */
+.homeHeader > div:first-of-type {
+  padding: 0.6rem 3rem;
+  text-align: right;
+  color: #cc0000;
+  font-weight: 400;
+}
+
+.homeBanner {
+  background-image: linear-gradient(to right, #b30000, #e60000);
+  padding: 3rem 0.5rem;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, minmax(20px, auto));
+}
+
+#logo {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+  text-align: right;
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+#title {
+  grid-column: 5 / 12;
+  grid-row: 1;
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 1px 2px rgb(0 0 0 / 15%);
+}
+
+#subtitle {
+  grid-column: 5 / 12;
+  grid-row: 2;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.17rem;
+  padding-left: 0.1rem;
+  text-shadow: 1px 2px rgb(0 0 0 / 15%);
+}
+
+/* Main content rule */
+.homeMain {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribeSection {
+  background-color: #f2f2f2;
+  padding: 1.5rem 2rem;
+  line-height: 2rem;
+}
+
+.subscribeSection select {
+  padding: 0.375rem 3rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  height: 34px;
+  margin-right: 3rem;
+}
+
+.subscribeSection input[type='email'] {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-right: 0;
+  height: 34px;
+  width: 20rem;
+  box-sizing: border-box;
+}
+
+#subscribeBtn {
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c757d;
+  vertical-align: middle;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: 2;
+  margin-left: -1rem;
+  height: 34px;
+  box-sizing: border-box;
+}
+
+#subscribeBtn:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.resultSubscribe {
+  background-color: #10b981;
+  color: #f8fafc;
+  margin-left: 0.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.levelSection {
+  padding: 1.3rem 2rem;
+  line-height: 2rem;
+}
+
+.level_btn {
+  color: #cc0000;
+  background-color: white;
+  padding: 0.8rem 3rem;
+}
+
+.level_btn:focus {
+  color: white;
+  background-color: #cc0000;
+  padding: 0.8rem 3rem;
+  outline: none;
+}
+
+.levelContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+  max-height: 180px;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  flex: 2.5;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+  overflow: auto;
+}
+
+.card {
+  margin: 0 0.75rem 0.75rem 0.75rem;
+  padding: 1rem 1.5rem 0 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.introSection {
+  background-color: #f2f2f2;
+  padding: 1.5rem 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+/* CSS for Quiz Page */
+/* Header rule */
+.quizHeader > div:first-of-type {
+  padding: 0.6rem 3rem;
+  text-align: right;
+  color: #cc0000;
+  font-weight: 400;
+}
+
+.quizBanner {
+  background-image: linear-gradient(to right, #b30000, #e60000);
+  padding: 1.3rem 0.5rem;
+  color: white;
+  display: flex;
+}
+
+#quizLogo {
+  margin-left: 10vw;
+  margin-right: 70vw;
+  text-align: left;
+  background-color: white;
+  color: #cc0000;
+  font-size: 3rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  display: block;
+  border: none;
+  display: inline-block;
+}
+
+#enuIconContainer {
+  margin-top: 1rem;
+  display: inline-block;
+  text-align: right;
+}
+
+.menuIcon {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* Main content rule */
+.quizMain {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editQuizSection {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1em 2rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-edit {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  color: #212529;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+#progress_container {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  height: 1.2rem;
+  position: relative;
+  margin: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: 200;
+  border-radius: 1rem;
+}
+
+#progress_container_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+#progress_container_text_align_center {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading_bar {
+  width: 10%;
+  height: 100%;
+  background-color: #cc0000;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.quizSection {
+  padding: 1.5rem 2rem;
+  line-height: 2rem;
+}
+
+.question {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 50;
+  margin-bottom: 0.5rem;
+}
+
+.optionContainer {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.option {
+  flex: 1 300px;
+  font-size: 1em;
+  font-weight: 100;
+  border-radius: 0.5em;
+  text-align: center;
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  margin: 0.75rem 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.option:active {
+  background-color: #e60000;
+  color: white;
+}
+
+/* CSS for Review Page */
+/* Header rule */
+.reviewHeader > div:first-of-type {
+  padding: 0.6rem 3rem;
+  text-align: right;
+  color: #cc0000;
+  font-weight: 400;
+}
+
+.reviewBanner {
+  background-image: linear-gradient(to right, #b30000, #e60000);
+  padding: 1.3rem 0.5rem;
+  color: white;
+  display: flex;
+}
+
+#reviewLogo {
+  margin-left: 10vw;
+  margin-right: 70vw;
+  text-align: left;
+  background-color: white;
+  color: #cc0000;
+  font-size: 3rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  display: block;
+  border: none;
+  display: inline-block;
+}
+
+#enuIconContainer {
+  margin-top: 1rem;
+  display: inline-block;
+  text-align: right;
+}
+
+.menuIcon {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* Main content rule */
+.reviewMain {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviewFormSection {
+  padding: 1rem 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.reviewFormSection select {
+  padding: 0.375rem 2rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: #495057;
+  vertical-align: middle;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  height: 34px;
+  margin: 0 1rem;
+}
+
+.reviewCardSection {
+  padding: 1rem 1rem;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reviewCard {
+  margin: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 220px;
+}
+
+.cardWord {
+  padding: 1rem 1rem 0 1rem;
+  border: 1px solid black;
+  border-bottom: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.cardWord > a {
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.wordRussian {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.cardInfo {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  height: 1.3rem;
+}
+
+.cardInfoLevel {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 1.3rem;
+}
+
+.cardInfoTime {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 1.3rem;
+}
+
+.exampleSentences {
+  color: #cc0000;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* CSS for Signin Page */
+/* Main content rule */
+.signinMain {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signinSection {
+  padding: 2rem;
+  line-height: 3rem;
+}
+
+.signinSection p {
+  line-height: 1.3rem;
+}
+
+.signinSection input[type='email'] {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-right: 0;
+  height: 34px;
+  width: 30rem;
+  box-sizing: border-box;
+  display: block;
+}
+
+#signinBtn {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  height: 34px;
+  box-sizing: border-box;
+  margin-top: 0.7rem;
+  display: block;
+}
+
+#signinBtn:hover {
+  background-color: #d9d9d9;
+  color: #6c757d;
+}
+
+#signinToHome {
+  padding: 0 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #cc0000;
+  text-decoration: none;
+}
+/* CSS for Quiz Finished Page */
+/* Main content rule */
+
+#loading_bar_finished {
+  width: 100%;
+  height: 100%;
+  background-color: #cc0000;
+  border-radius: 1rem;
+}
+
+.quizFinishedSection {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#newQuiz {
+  border-radius: 0.5em;
+  text-align: center;
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  margin: 0.75rem 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#newQuiz a {
+  color: #212529;
+}
+
+#finishQuizMessage {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+/* Media query for responsive design */
+
+@media only screen and (max-width: 800px) {
+  .homeMain {
+    max-width: 740px;
+  }
+  .reviewMain {
+    max-width: 740px;
+  }
+  .quizMain {
+    max-width: 740px;
+  }
+  .subscribeSection select {
+    padding: 0.375rem 1rem 0.375rem 0.75rem;
+  }
+
+  .subscribeSection input[type='email'] {
+    width: 12rem;
+  }
+
+  #logo {
+    font-size: 4rem;
+  }
+
+  #title {
+    font-size: 3rem;
+  }
+
+  #subtitle {
+    font-size: 1rem;
+  }
+  .level_btn {
+    padding: 0.8rem 0rem;
+  }
+
+  .signinSection {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeMain {
+    max-width: 560px;
+  }
+  .reviewMain {
+    max-width: 560px;
+  }
+  .quizMain {
+    max-width: 560px;
+  }
+  .subscribeSection select {
+    padding: 0.375rem 0.5rem 0.375rem 0.25rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .subscribeSection input[type='email'] {
+    width: 8rem;
+    font-size: 0.9rem;
+  }
+
+  .subscribeSection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  #quizLogo {
+    margin-right: 60vw;
+  }
+
+  #reviewLogo {
+    margin-right: 60vw;
+  }
+
+  #reviewCaption {
+    display: block;
+  }
+
+  .reviewFormSection select {
+    padding: 0.375rem 0.75rem;
+    margin: 0 0.5rem;
+  }
+
+  .quizFinishedSection {
+    font-size: 1rem;
+  }
+  #finishQuizMessage {
+    font-size: 1rem;
+  }
+
+  .signinSection input[type='email'] {
+    width: 24rem;
+  }
+  #signinToHome {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+  .homeMain {
+    max-width: 500px;
+  }
+  .reviewMain {
+    max-width: 500px;
+  }
+  .quizMain {
+    max-width: 500px;
+  }
+
+  #logo {
+    grid-column: 1 / 4;
+    font-size: 3rem;
+  }
+
+  #title {
+    grid-column: 4 / 12;
+    font-size: 2rem;
+  }
+
+  #subtitle {
+    grid-column: 4 / 12;
+  }
+
+  #quizLogo {
+    margin-right: 50vw;
+  }
+  #reviewLogo {
+    margin-right: 50vw;
+  }
+
+  .reviewFormSection select {
+    margin: 0;
+  }
+
+  .signinSection {
+    font-size: 0.9rem;
+  }
+
+  .signinSection input[type='email'] {
+    width: 16rem;
+  }
+}

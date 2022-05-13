@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="russian language learning" />
+    <meta name="author" content="Chi-Ting Lu" />
+    <title>Хорошего дня: Get Daily Russian Vocab</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4bb82d01f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="quizHeader">
+      <div>Learn Russian</div>
+      <div class="quizBanner">
+        <div id="quizLogo" onclick="window.location.href='home.html'">好</div>
+        <div class="menuIconContainer">
+          <div class="menuIcon"></div>
+          <div class="menuIcon"></div>
+          <div class="menuIcon"></div>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="quizPage.html">Quiz</a>
+          <a href="reviewPage.html">Review</a>
+          <a href="signinPage.html">Sign in</a>
+        </nav>
+      </div>
+    </div>
+    <div class="quizMain">
+      <div class="editQuizSection">
+        <span id="quizFilter">Level 1, past 30 days</span>
+        <span><i class="far fa-edit"></i></span>
+      </div>
+      <div id="progress_container">
+        <div id="progress_container_text">
+          <div id="progress_container_text_align_center">
+            <span id="quizCount">10</span> &nbsp; / &nbsp;10
+          </div>
+        </div>
+        <div id="loading_bar_finished"></div>
+      </div>
+      <div class="quizFinishedSection">
+        <p id="finishQuizMessage">
+          🎉🎉🎉 Congratulations: You already finished the quiz
+        </p>
+        <p>Your score:</p>
+        <p>70% (7/10)</p>
+        <button id="newQuiz" onclick="window.location.href='quizPage.html'">
+          New quiz
+        </button>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <span>Хорошего дня</span>
+        <i class="fa fa-github" style="font-size: 1.1rem"></i>
+      </div>
+    </footer>
+  </body>
+</html>
